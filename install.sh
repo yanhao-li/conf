@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # zsh
-ln -sf "$cwd/zsh/zshrc" ~/.zshrc
+ln -sf "$pwd/zsh/zshrc" ~/.zshrc
 
 # vim
-ln -sf "$cwd/vim/vimrc" ~/.vimrh
+ln -sf "$pwd/vim/vimrc" ~/.vimrc
 
 # git
-ln -sf "$cwd/git/.gitconfig" ~/.gitconfig
-ln -sf "$cwd/git/.gitignore_global" ~/.gitignore_global
-ln -sf "$cwd/git/.gitattributes" ~/.gitattributes
+ln -sf "$pwd/git/.gitconfig" ~/.gitconfig
+ln -sf "$pwd/git/.gitignore_global" ~/.gitignore_global
+ln -sf "$pwd/git/.gitattributes" ~/.gitattributes
