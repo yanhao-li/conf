@@ -106,4 +106,3 @@ alias sml='rlwrap /usr/local/smlnj/bin/sml'
 bindkey -v
 
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-eval "$(rbenv init -)"
