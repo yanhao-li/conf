@@ -200,10 +200,10 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwVFlUkbnVsbNQNDg8QERIT
-	FFZOU1NpemVYTlNmRmxhZ3NWTlNOYW1lViRjbGFzcyNAMQAAAAAAABAQgAKAA18QFklu
-	cHV0TW9ub05hcnJvdy1NZWRpdW3SFxgZGlokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRm9u
-	dKIZG1hOU09iamVjdAgRGiQpMjdJTFFTWF5nbnd+hY6QkpStsr3GzdAAAAAAAAABAQAA
-	AAAAAAAcAAAAAAAAAAAAAAAAAAAA2Q==
+	FFZOU1NpemVYTlNmRmxhZ3NWTlNOYW1lViRjbGFzcyNAMQAAAAAAABAQgAKAA18QFEpl
+	dEJyYWluc01vbm8tTWVkaXVt0hcYGRpaJGNsYXNzbmFtZVgkY2xhc3Nlc1ZOU0ZvbnSi
+	GRtYTlNPYmplY3QIERokKTI3SUxRU1heZ253foWOkJKUq7C7xMvOAAAAAAAAAQEAAAAA
+	AAAAHAAAAAAAAAAAAAAAAAAAANc=
 	</data>
 	<key>FontAntialias</key>
 	<true/>
@@ -288,7 +288,7 @@
 	<key>UseBrightBold</key>
 	<false/>
 	<key>name</key>
-	<string>Max</string>
+	<string>calm</string>
 	<key>type</key>
 	<string>Window Settings</string>
 </dict>
