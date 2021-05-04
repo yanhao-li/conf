@@ -99,9 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Ada
-alias gnatmake='/Users/yanhaoli/opt/GNAT/2020/bin/gnatmake'
-
 # Standard ML New Jersey
 alias sml='rlwrap /usr/local/smlnj/bin/sml'
 
