@@ -10,6 +10,7 @@ set nocompatible
 let mapleader = ","
 
 colorscheme peachpuff
+let g:airline_theme='luna'
 " Turn on syntax highlighting.
 syntax on
 

@@ -5,6 +5,8 @@ ln -sf "$(pwd)/zsh/zshrc" ~/.zshrc
 
 # vim
 ln -sf "$(pwd)/vim/vimrc" ~/.vimrc
+mkdir -p ~/.vim/pack/dist
+ln -sf "$(pwd)/vim/plugins" ~/.vim/pack/dist/start
 
 # git
 ln -sf "$(pwd)/git/gitconfig" ~/.gitconfig
