@@ -7,6 +7,8 @@
 " `vim -u foo`).
 set nocompatible
 
+let mapleader = ","
+
 colorscheme peachpuff
 " Turn on syntax highlighting.
 syntax on
