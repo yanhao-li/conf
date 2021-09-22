@@ -71,6 +71,8 @@ set ignorecase
 set smartcase
 set hlsearch "Highlight search things
 set incsearch "Search while typing
+" doubly esc for clear search highlight
+nnoremap <esc><esc> :noh<return>
 
 " -----------------------------------------------------------------------------
 " Fuzzy Find / Ctrl + P
