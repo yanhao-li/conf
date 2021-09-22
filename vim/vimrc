@@ -107,10 +107,13 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_working_path_mode = 'r'
 nmap <leader>p :CtrlP<cr>  " enter file search mode
 
-" Nerdtree
+" -----------------------------------------------------------------------------
+" Nerd Tree
+" -----------------------------------------------------------------------------
 autocmd vimenter * NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <C-n> :NERDTreeToggle<CR>  " open and close file tree
 nmap <leader>n :NERDTreeFind<CR>  " open current buffer in file tree
+
