@@ -10,3 +10,6 @@
 [submodule "vim/plugins/nerdtree"]
 	path = vim/plugins/nerdtree
 	url = https://github.com/preservim/nerdtree.git
+[submodule "vim/plugins/auto-pairs"]
+	path = vim/plugins/auto-pairs
+	url = git@github.com:jiangmiao/auto-pairs.git

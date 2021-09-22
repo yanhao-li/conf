@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git submodule update --init --recursive
+
 # zsh
 ln -sf "$(pwd)/zsh/zshrc" ~/.zshrc
 
