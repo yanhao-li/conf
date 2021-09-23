@@ -4,6 +4,8 @@ git submodule update --init --recursive
 
 # zsh
 ln -sf "$(pwd)/zsh/zshrc" ~/.zshrc
+ln -sf "$(pwd)/zsh/zprofile" ~/.zprofile
+ln -sf "$(pwd)/zsh/yanhaoli.zsh-theme" ~/.oh-my-zsh/themes/yanhaoli.zsh-theme
 
 # vim
 ln -sf "$(pwd)/vim/vimrc" ~/.vimrc
