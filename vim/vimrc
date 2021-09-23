@@ -54,7 +54,8 @@ set wrap " Wrap lines
 " Key Bindings
 " -----------------------------------------------------------------------------
 " Unbind some useless/annoying default key bindings.
-nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
+" 'Q' in normal mode enters Ex mode. You almost never want this.
+nmap Q <Nop> 
 
 " Try to prevent bad habits like using the arrow keys for movement.
 nnoremap <Left>  :echoe "Use h"<CR>
@@ -71,14 +72,17 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 " Buffer management
 " -----------------------------------------------------------------------------
 set hidden " Allow buffers to be hidden if you've modified a buffer
-nmap <leader>l :bnext<CR> " Move to the next buffer
-nmap <leader>h :bprevious<CR> " Move to the previous buffer
+" Move to the next buffer
+nmap <leader>l :bnext<CR> 
+" Move to the previous buffer
+nmap <leader>h :bprevious<CR> 
 
 " Close the current buffer and move to the previous one
 " This replicates the idea of closing a tab
 nmap <leader>q :bp <BAR> bd #<CR>
 
-nmap <leader>bl :ls<CR> " Show all open buffers and their status
+" Show all open buffers and their status
+nmap <leader>bl :ls<CR> 
 
 " -----------------------------------------------------------------------------
 " Search
@@ -88,8 +92,9 @@ nmap <leader>bl :ls<CR> " Show all open buffers and their status
 set ignorecase
 set smartcase
 set hlsearch "Highlight search things
-set incsearch "Search while typing
-nnoremap <esc><esc> :noh<return> "doubly esc for clear search highlight
+set incsearch "Search while typin
+"doubly esc for clear search highlight
+nnoremap <esc><esc> :noh<return> 
 
 
 " -----------------------------------------------------------------------------
@@ -104,7 +109,8 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'r'
-nmap <leader>p :CtrlP<cr>  " enter file search mode
+" enter file search mode
+nmap <leader>p :CtrlP<cr>  
 
 
 " -----------------------------------------------------------------------------
@@ -124,6 +130,8 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-map <C-n> :NERDTreeToggle<CR>  " open and close file tree
-nmap <leader>n :NERDTreeFind<CR>  " open current buffer in file tree
+" open and close file tree
+map <C-n> :NERDTreeToggle<CR>  
+" open current buffer in file tree
+nmap <leader>n :NERDTreeFind<CR>  
 
