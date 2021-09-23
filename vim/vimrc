@@ -21,6 +21,9 @@ set numberwidth=4
 " Always show the status line at the bottom, even if only have one window open.
 set laststatus=2
 
+" highlight matching [{()}]
+set showmatch
+
 " -----------------------------------------------------------------------------
 " Text
 " -----------------------------------------------------------------------------
