@@ -30,9 +30,24 @@ set showmatch
 " Configure backspace so it acts as it should act
 set backspace=indent,eol,start
 
+" Use spaces instead of tabs
+set expandtab
+
+" Be smart when using tabs ;)
+set smarttab
+
+" 1 tab == 4 spaces
+set tabstop=4       " num of visual space per <TAB> char
+set softtabstop=4   " num of spaces for TAB when editing, useful for backspace
+set shiftwidth=4
+
 " Indentation
 set ai " Auto indent
 set si " Smart indent
+
+" Linebreak on 500 characters
+set linebreak
+set tw=500
 set wrap " Wrap lines
 
 " -----------------------------------------------------------------------------
