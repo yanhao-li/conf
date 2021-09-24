@@ -16,3 +16,6 @@ ln -sf "$(pwd)/vim/plugins" ~/.vim/pack/vendor/start
 ln -sf "$(pwd)/git/gitconfig" ~/.gitconfig
 ln -sf "$(pwd)/git/gitignore_global" ~/.gitignore_global
 ln -sf "$(pwd)/git/gitattributes" ~/.gitattributes
+
+# tmux
+ln -sf "$(pwd)/tmux.conf" ~/.tmux.conf
