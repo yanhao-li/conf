@@ -13,3 +13,6 @@
 [submodule "vim/plugins/auto-pairs"]
 	path = vim/plugins/auto-pairs
 	url = git@github.com:jiangmiao/auto-pairs.git
+[submodule "vim/plugins/vim-surround"]
+	path = vim/plugins/vim-surround
+	url = git@github.com:tpope/vim-surround.git
