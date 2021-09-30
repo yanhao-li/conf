@@ -16,3 +16,12 @@
 [submodule "vim/plugins/vim-surround"]
 	path = vim/plugins/vim-surround
 	url = git@github.com:tpope/vim-surround.git
+[submodule "vim/plugins/vim-matchup"]
+	path = vim/plugins/vim-matchup
+	url = git@github.com:andymass/vim-matchup.git
+[submodule "vim/plugins/terminus"]
+	path = vim/plugins/terminus
+	url = git@github.com:wincent/terminus.git
+[submodule "vim/plugins/night-owl.vim"]
+	path = vim/plugins/night-owl.vim
+	url = git@github.com:haishanh/night-owl.vim.git

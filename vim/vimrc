@@ -10,9 +10,14 @@ set noerrorbells visualbell t_vb= " Disable audible bell because it's annoying.
 " -----------------------------------------------------------------------------
 " UI
 " -----------------------------------------------------------------------------
-colorscheme peachpuff
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+syntax enable " Turn on syntax highlighting.
+colorscheme night-owl
+let g:lightline = { 'colorscheme': 'nightowl' }
 let g:airline_theme='luna'
-syntax on " Turn on syntax highlighting.
 
 " Show line numbers.
 set number
@@ -22,7 +27,6 @@ set numberwidth=4
 set laststatus=2
 
 " highlight matching [{()}]
-set showmatch
 
 " -----------------------------------------------------------------------------
 " Text
