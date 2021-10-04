@@ -1,2 +1,1 @@
-# using homebrew python3
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"eval "$(pyenv init --path)"
+eval "$(pyenv init --path)"

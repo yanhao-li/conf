@@ -25,3 +25,9 @@
 [submodule "vim/plugins/night-owl.vim"]
 	path = vim/plugins/night-owl.vim
 	url = git@github.com:haishanh/night-owl.vim.git
+[submodule "vim/plugins/vim-javascript"]
+	path = vim/plugins/vim-javascript
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule "vim/plugins/vim-jsx-pretty"]
+	path = vim/plugins/vim-jsx-pretty
+	url = git@github.com:MaxMEllon/vim-jsx-pretty.git

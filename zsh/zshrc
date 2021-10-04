@@ -102,4 +102,3 @@ GIT_EDITOR=vim
 bindkey -v
 
 export TERM=xterm-256color
-eval "$(pyenv init -)"
