@@ -6,6 +6,7 @@ let mapleader = ","
 set shortmess+=I " Disable the default Vim startup message.
 set mouse+=a " Enable mouse support.
 set noerrorbells visualbell t_vb= " Disable audible bell because it's annoying.
+set autowrite  "Save on buffer switch
 
 " -----------------------------------------------------------------------------
 " UI
@@ -25,8 +26,6 @@ set numberwidth=4
 
 " Always show the status line at the bottom, even if only have one window open.
 set laststatus=2
-
-" highlight matching [{()}]
 
 " -----------------------------------------------------------------------------
 " Text
@@ -104,6 +103,8 @@ nnoremap <esc><esc> :noh<return>
 " -----------------------------------------------------------------------------
 " Fuzzy Find / Ctrl + P
 " -----------------------------------------------------------------------------
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip 
+set wildignore+=*/node_modules/**
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
   \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
