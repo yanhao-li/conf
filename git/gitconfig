@@ -2,7 +2,7 @@
 	name = Yanhao Li
 	email = hi@yanhaoli.com
 [core]
-	excludesfile = /Users/yanhaoli/.gitignore_global
+	excludesfile = /home/yanhaoli/.gitignore_global
 	ignorecase = false
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
