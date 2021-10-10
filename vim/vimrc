@@ -75,28 +75,28 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 " -----------------------------------------------------------------------------
 set hidden " Allow buffers to be hidden if you've modified a buffer
 " Move to the next buffer
-nmap <leader>l :bnext<CR> 
+nmap <leader>l :bnext<CR>
 " Move to the previous buffer
-nmap <leader>h :bprevious<CR> 
+nmap <leader>h :bprevious<CR>
 
 " Close the current buffer and move to the previous one
 " This replicates the idea of closing a tab
 nmap <leader>q :bp <BAR> bd #<CR>
 
 " Show all open buffers and their status
-nmap <leader>bl :ls<CR> 
+nmap <leader>bl :ls<CR>
 
 " -----------------------------------------------------------------------------
 " Search
 " -----------------------------------------------------------------------------
-" Case-insensitive when all characters are lowercase. 
+" Case-insensitive when all characters are lowercase.
 " Case-sensitive if contains any capital letters.
 set ignorecase
 set smartcase
 set hlsearch "Highlight search things
 set incsearch "Search while typin
 "doubly esc for clear search highlight
-nnoremap <esc><esc> :noh<return> 
+nnoremap <esc><esc> :noh<return>
 
 
 " -----------------------------------------------------------------------------
@@ -125,6 +125,7 @@ let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 " let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 let g:airline#extensions#hunks#enabled = 0
+let g:airline#extensions#tabline#formatter = 'default'
 
 
 " -----------------------------------------------------------------------------
