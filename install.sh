@@ -9,8 +9,9 @@ ln -sf "$(pwd)/zsh/yanhaoli.zsh-theme" ~/.oh-my-zsh/themes/yanhaoli.zsh-theme
 
 # vim
 ln -sf "$(pwd)/vim/vimrc" ~/.vimrc
-mkdir -p ~/.vim/pack/vendor
-ln -sf "$(pwd)/vim/plugins" ~/.vim/pack/vendor/start
+# vim plugins
+mkdir -p ~/.vim/pack/plugins
+ln -sf "$(pwd)/vim/plugins" ~/.vim/pack/plugins/start
 
 # git
 ln -sf "$(pwd)/git/gitconfig" ~/.gitconfig
