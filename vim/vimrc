@@ -26,6 +26,10 @@ set numberwidth=4
 " Always show the status line at the bottom, even if only have one window open.
 set laststatus=2
 
+" Highlight trailing whitespace
+" highlight ExtraWhitespace ctermbg=red guibg=red
+" match ExtraWhitespace /\s\+\%#\@<!$/
+
 " -----------------------------------------------------------------------------
 " Text
 " -----------------------------------------------------------------------------
@@ -38,10 +42,10 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 4 spaces
-set tabstop=4       " num of visual space per <TAB> char
-set softtabstop=4   " num of spaces for TAB when editing, useful for backspace
-set shiftwidth=4
+" 1 tab == 2 spaces
+set tabstop=2       " num of visual space per <TAB> char
+set softtabstop=2   " num of spaces for TAB when editing, useful for backspace
+set shiftwidth=2
 
 " Indentation
 set ai " Auto indent
