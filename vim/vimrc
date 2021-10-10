@@ -57,7 +57,7 @@ set wrap " Wrap lines
 " -----------------------------------------------------------------------------
 " Unbind some useless/annoying default key bindings.
 " 'Q' in normal mode enters Ex mode. You almost never want this.
-nmap Q <Nop> 
+nmap Q <Nop>
 
 " Try to prevent bad habits like using the arrow keys for movement.
 nnoremap <Left>  :echoe "Use h"<CR>
@@ -102,7 +102,7 @@ nnoremap <esc><esc> :noh<return>
 " -----------------------------------------------------------------------------
 " Fuzzy Find / Ctrl + P
 " -----------------------------------------------------------------------------
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip 
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set wildignore+=*/node_modules/**
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
@@ -114,7 +114,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'r'
 " enter file search mode
-nmap <leader>p :CtrlP<cr>  
+nmap <leader>p :CtrlP<cr>
 
 
 " -----------------------------------------------------------------------------
@@ -123,9 +123,11 @@ nmap <leader>p :CtrlP<cr>
 " let g:airline_theme='luna'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
-" let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
+let g:airline#extensions#tabline#fnamecollapse = 0
 let g:airline#extensions#hunks#enabled = 0
 let g:airline#extensions#tabline#formatter = 'default'
+let g:airline_section_c = '%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
 
 
 " -----------------------------------------------------------------------------
@@ -138,7 +140,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " open and close file tree
-map <C-n> :NERDTreeToggle<CR>  
+map <C-n> :NERDTreeToggle<CR>
 " open current buffer in file tree
-nmap <leader>n :NERDTreeFind<CR>  
+nmap <leader>n :NERDTreeFind<CR>
 
