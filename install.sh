@@ -12,6 +12,8 @@ ln -sf "$(pwd)/vim/vimrc" ~/.vimrc
 # vim plugins
 mkdir -p ~/.vim/pack/plugins
 ln -sf "$(pwd)/vim/plugins" ~/.vim/pack/plugins/start
+# vim coc
+ln -sf "$(pwd)/vim/coc-settings.json" ~/.vim/coc-settings.json
 
 # git
 ln -sf "$(pwd)/git/gitconfig" ~/.gitconfig
