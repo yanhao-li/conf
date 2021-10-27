@@ -30,7 +30,15 @@ set laststatus=2
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+\%#\@<!$/
 
-set list listchars=tab:»\ ,trail:·,extends:»,precedes:«
+" Show 'invisible' characters
+set list
+" Set characters used to indicate 'invisible' characters
+set listchars=tab:→\ 
+set listchars+=trail:·
+
+" make the highlighting of tabs and other non-text less annoying
+highlight SpecialKey ctermfg=19 guifg=#333333
+highlight NonText ctermfg=19 guifg=#333333
 
 " -----------------------------------------------------------------------------
 " Text
@@ -46,8 +54,8 @@ set smarttab
 
 " 1 tab == 8 spaces
 set tabstop=8       " num of visual space per <TAB> char
-set softtabstop=8   " num of spaces for TAB when editing, useful for backspace
-set shiftwidth=8    " auto indents of 8 spaces
+set softtabstop=8   " num of spaces for ecah press of TAB when editing
+set shiftwidth=8    " num of space for auto indents
 
 " Indentation
 set ai " Auto indent
