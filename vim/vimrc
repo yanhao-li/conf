@@ -38,16 +38,16 @@ set list listchars=tab:»\ ,trail:·,extends:»,precedes:«
 " Configure backspace so it acts as it should act
 set backspace=indent,eol,start
 
-" Use spaces instead of tabs
-set expandtab
+" Use tabs, not spaces
+set noexpandtab
 
-" Be smart when using tabs ;)
+" Be smart when using tabs
 set smarttab
 
-" 1 tab == 2 spaces
-set tabstop=2       " num of visual space per <TAB> char
-set softtabstop=2   " num of spaces for TAB when editing, useful for backspace
-set shiftwidth=2
+" 1 tab == 8 spaces
+set tabstop=8       " num of visual space per <TAB> char
+set softtabstop=8   " num of spaces for TAB when editing, useful for backspace
+set shiftwidth=8    " auto indents of 8 spaces
 
 " Indentation
 set ai " Auto indent
@@ -55,7 +55,7 @@ set si " Smart indent
 
 " Linebreak on 500 characters
 set linebreak
-set tw=500
+set tw=80 " screen in 80 columns wide, wrap at 78
 set wrap " Wrap lines
 
 " -----------------------------------------------------------------------------
