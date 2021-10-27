@@ -27,8 +27,10 @@ set numberwidth=4
 set laststatus=2
 
 " Highlight trailing whitespace
-" highlight ExtraWhitespace ctermbg=red guibg=red
-" match ExtraWhitespace /\s\+\%#\@<!$/
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+\%#\@<!$/
+
+set list listchars=tab:»\ ,trail:·,extends:»,precedes:«
 
 " -----------------------------------------------------------------------------
 " Text
