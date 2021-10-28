@@ -41,3 +41,6 @@
 	path = vim/plugins/coc.nvim
 	url = git@github.com:neoclide/coc.nvim.git
   branch = release
+[submodule "vim/plugins/cscope_maps"]
+	path = vim/plugins/cscope_maps
+	url = git@github.com:chazy/cscope_maps.git
