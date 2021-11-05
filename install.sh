@@ -10,8 +10,9 @@ ln -sf "$(pwd)/zsh/yanhaoli.zsh-theme" ~/.oh-my-zsh/themes/yanhaoli.zsh-theme
 # vim
 ln -sf "$(pwd)/vim/vimrc" ~/.vimrc
 # vim plugins
+rm -rf ~/.vim/pack
 mkdir -p ~/.vim/pack/plugins
-ln -sf "$(pwd)/vim/plugins" ~/.vim/pack/plugins/start
+ln -sFf "$(pwd)/vim/plugins" ~/.vim/pack/plugins/start
 # vim coc
 ln -sf "$(pwd)/vim/coc-settings.json" ~/.vim/coc-settings.json
 
