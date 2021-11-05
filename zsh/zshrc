@@ -93,6 +93,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias vim to neovim
+if [ -x "$(command -v nvim)" ]; then
+  # nvim will still invoke nvim stable
+  alias vi='nvim'
+  alias vim='nvim'
+  alias vim8='\vim' # vim 8.1
+fi
 
 # preferred editor
 EDITOR=vim
