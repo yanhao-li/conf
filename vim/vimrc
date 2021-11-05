@@ -43,6 +43,8 @@ highlight NonText ctermfg=19 guifg=#333333
 " highlight current line
 set cursorline
 
+set colorcolumn=+1 " highlight column after 'textwidth'
+
 " -----------------------------------------------------------------------------
 " Text
 " -----------------------------------------------------------------------------
