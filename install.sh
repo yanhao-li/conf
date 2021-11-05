@@ -13,8 +13,15 @@ ln -sf "$(pwd)/vim/vimrc" ~/.vimrc
 rm -rf ~/.vim/pack
 mkdir -p ~/.vim/pack/plugins
 ln -sFf "$(pwd)/vim/plugins" ~/.vim/pack/plugins/start
-# vim coc
-ln -sf "$(pwd)/vim/coc-settings.json" ~/.vim/coc-settings.json
+
+# neovim and coc
+if [ -d "~/.config/nvim" ]; then
+  ln -sf "$cwd/nvim/init.vim" ~/.config/nvim/init.vim
+  ln -sf "$cwd/nvim/coc-settings.json" ~/.config/nvim/coc-settings.json
+else
+  # fallback to vim
+  ln -sf "$cwd/nvim/coc-settings.json" ~/.vim/coc-settings.json
+fi
 
 # git
 ln -sf "$(pwd)/git/gitconfig" ~/.gitconfig
