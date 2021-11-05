@@ -40,6 +40,9 @@ set listchars+=trail:·
 highlight SpecialKey ctermfg=19 guifg=#333333
 highlight NonText ctermfg=19 guifg=#333333
 
+" highlight current line
+set cursorline
+
 " -----------------------------------------------------------------------------
 " Text
 " -----------------------------------------------------------------------------
