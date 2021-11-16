@@ -15,12 +15,12 @@ mkdir -p ~/.vim/pack/plugins
 ln -sFf "$(pwd)/vim/plugins" ~/.vim/pack/plugins/start
 
 # neovim and coc
-if [ -d "~/.config/nvim" ]; then
-  ln -sf "$cwd/nvim/init.vim" ~/.config/nvim/init.vim
-  ln -sf "$cwd/nvim/coc-settings.json" ~/.config/nvim/coc-settings.json
+if [ -d ~/.config/nvim ]; then
+  ln -sf "$(pwd)/nvim/init.vim" ~/.config/nvim/init.vim
+  ln -sf "$(pwd)/nvim/coc-settings.json" ~/.config/nvim/coc-settings.json
 else
   # fallback to vim
-  ln -sf "$cwd/nvim/coc-settings.json" ~/.vim/coc-settings.json
+  ln -sf "$(pwd)/nvim/coc-settings.json" ~/.vim/coc-settings.json
 fi
 
 # git
