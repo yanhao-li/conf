@@ -4,7 +4,10 @@
 set nocompatible " Disable Vi compatibility
 let mapleader = ","
 set shortmess+=I " Disable the default Vim startup message.
-set mouse+=a " Enable mouse support.
+set mouse=a " Enable mouse support.
+if !has('nvim')
+	set ttymouse=xterm2
+endif
 set noerrorbells visualbell t_vb= " Disable audible bell because it's annoying.
 set autowrite  "Save on buffer switch
 
@@ -12,7 +15,7 @@ set autowrite  "Save on buffer switch
 " UI
 " -----------------------------------------------------------------------------
 if (has("termguicolors"))
- set termguicolors
+	set termguicolors
 endif
 
 syntax enable " Turn on syntax highlighting.
@@ -141,8 +144,8 @@ nnoremap <esc><esc> :noh<return>
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set wildignore+=*/node_modules/**
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
-  \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
+	\ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
+	\ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
 \}
 
 " Use the nearest .git|.svn|.hg|.bzr directory as the cwd
