@@ -3,6 +3,8 @@
 git submodule update --init --recursive
 
 # zsh
+# install oh-my-zsh
+[ ! -d ~/.oh-my-zsh ] && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ln -sf "$(pwd)/zsh/zshrc" ~/.zshrc
 ln -sf "$(pwd)/zsh/zprofile" ~/.zprofile
 ln -sf "$(pwd)/zsh/yanhaoli.zsh-theme" ~/.oh-my-zsh/themes/yanhaoli.zsh-theme
