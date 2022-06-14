@@ -29,3 +29,5 @@
     colorMoved = default
 [pull]
 	rebase = true
+[init]
+	defaultBranch = main
