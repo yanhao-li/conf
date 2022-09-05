@@ -71,9 +71,9 @@ plugins=(
   zsh-autosuggestions
 )
 
-autoload -U compinit && compinit # enable zsh-completions
-
 source $ZSH/oh-my-zsh.sh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
@@ -117,3 +117,5 @@ eval "$(pyenv init -)"
 [[ ! -r /Users/yanhaoli/.opam/opam-init/init.zsh ]] || source /Users/yanhaoli/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
 export PATH=$PATH:/opt/homebrew/opt/llvm/bin
+export PATH=$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH
+export PATH=$HOME/Library/Python/3.8/bin:$PATH

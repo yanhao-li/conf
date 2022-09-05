@@ -1,6 +1,6 @@
 [user]
-	name = Yanhao Li
-	email = hi@yanhaoli.com
+	name = Yanhao LI
+	email = 12378652+yanhao-li@users.noreply.github.com
 [core]
 	excludesfile = /Users/yanhaoli/.gitignore_global
 	ignorecase = false
@@ -31,3 +31,8 @@
 	rebase = true
 [init]
 	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
