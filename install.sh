@@ -1,7 +1,5 @@
 #!/bin/bash
 
-git submodule update --init --recursive
-
 # zsh
 # install oh-my-zsh
 [ ! -d ~/.oh-my-zsh ] && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -11,18 +9,10 @@ ln -sf "$(pwd)/zsh/yanhaoli.zsh-theme" ~/.oh-my-zsh/themes/yanhaoli.zsh-theme
 
 # vim
 ln -sf "$(pwd)/vim/vimrc" ~/.vimrc
-# vim plugins
-rm -rf ~/.vim/pack
-mkdir -p ~/.vim/pack/plugins
-ln -sFf "$(pwd)/vim/plugins" ~/.vim/pack/plugins/start
 
-# neovim and coc
+# neovim
 if [ -d ~/.config/nvim ]; then
   ln -sf "$(pwd)/nvim/init.vim" ~/.config/nvim/init.vim
-  ln -sf "$(pwd)/nvim/coc-settings.json" ~/.config/nvim/coc-settings.json
-else
-  # fallback to vim
-  ln -sf "$(pwd)/nvim/coc-settings.json" ~/.vim/coc-settings.json
 fi
 
 # git
